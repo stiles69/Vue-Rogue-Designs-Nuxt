@@ -1,0 +1,35 @@
+.RogueLayout {
+  max-width: 800px;
+  margin: auto;
+}
+.RogueCardTitle {
+  padding-bottom: 20px;
+  padding-right: 5px;
+}
+.RogueCardText {
+  font-weight: 500;
+}
+.RogueLink {
+  text-decoration: none;
+  font-size: 14px;
+}
+.RogueParagraph {
+  max-width: 600px;
+}
+.RogueUL {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.RogueComponent {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.RogueHeading {
+  max-width: 280px;
+}
+.RogueCardActions {
+  padding-bottom: 20px;
+}
+a {
+  text-decoration: none;
+}

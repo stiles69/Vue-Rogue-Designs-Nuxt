@@ -1,0 +1,26 @@
+{
+  "name": "nuxt-app-test",
+  "version": "2.0.0",
+  "description": "My amazing Nuxt.js project",
+  "author": "stiles69",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^1.0.0",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-tag-manager": "^2.0.0",
+    "@nuxtjs/pwa": "^2.3.2",
+    "@nuxtjs/sitemap": "^0.1.1",
+    "@nuxtjs/vuetify": "^0.4.2",
+    "cross-env": "^5.0.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1"
+  }
+}
