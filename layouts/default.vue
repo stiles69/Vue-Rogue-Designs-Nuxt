@@ -19,7 +19,7 @@
       <v-container>
         <nuxt />
       </v-container>
-      <v-footer dark color='primary' class='white--text--text' height='auto' aria-label='Footer'>
+      <v-footer dark color='primary' class='white--text--text' height='250' aria-label='Footer'>
         <v-layout column>
           <div class='RogueFooter'>Rogue Designs</div>
           <div class='RogueFooter'>Email <a href='mailto://admin@roguedesigns.us' class='white--text'>admin@roguedesigns.us</a></div>
@@ -32,6 +32,7 @@
 </template>
 
 <script>
+import '../components/versioner.js'
 export default {
   data () {
     return {
@@ -42,7 +43,7 @@ export default {
       right: false,
       rightDrawer: false,
       title: 'Rogue Designs',
-      version: '19',
+      version: versioner.version,
       items: [
         { icon: 'home', title: 'Home', target: '/' },
         { icon: 'phone', title: 'Contact', target: '/contact' },

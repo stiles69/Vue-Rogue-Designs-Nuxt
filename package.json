@@ -1,6 +1,6 @@
 {
   "name": "rogue-designs-nuxt",
-  "version": "19.0.0",
+  "version": "21.0.0",
   "description": "Rogue Designs Website in Nuxt.",
   "author": "stiles69",
   "private": true,
@@ -8,9 +8,11 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "version": "versionit"
   },
   "dependencies": {
+    "fs-extra": "^7.0.0",
     "nuxt": "^1.0.0",
     "vue": "^2.5.17"
   },
