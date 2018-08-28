@@ -2,16 +2,16 @@ importScripts('/_nuxt/workbox.42554690.js')
 
 workbox.precaching.precacheAndRoute([
   {
-    "url": "/_nuxt/app.bb2cbb1ae4910f134433.js",
-    "revision": "165fc1884bf441105473ce1eb17ea30b"
+    "url": "/_nuxt/app.61ddf865906c72bb55b1.js",
+    "revision": "74c98949571312c8471b0aba2fdda8a2"
   },
   {
-    "url": "/_nuxt/layouts/default.41b0aef2a477ccb23a88.js",
-    "revision": "3d84468589548d555a0b007011d231df"
+    "url": "/_nuxt/layouts/default.daff664b9c6fc3b468a2.js",
+    "revision": "47a2ba6461dfe0499edc5a3f537413e6"
   },
   {
-    "url": "/_nuxt/manifest.836085d4c9fd627c9f48.js",
-    "revision": "eb4166747ddf45eaf1e9821699647e2c"
+    "url": "/_nuxt/manifest.4985f91c6d3ef95e7745.js",
+    "revision": "9a9e38e1b9aa522d2bd598ce84955265"
   },
   {
     "url": "/_nuxt/pages/contact.d2a6ddf5be10e0d08ca8.js",
@@ -38,7 +38,7 @@ workbox.precaching.precacheAndRoute([
     "revision": "78d41ea47cd205c96afd0bbce22f7cf9"
   }
 ], {
-  "cacheId": "nuxt-app-test",
+  "cacheId": "rogue-designs-nuxt",
   "directoryIndex": "/",
   "cleanUrls": false
 })

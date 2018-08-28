@@ -5,9 +5,9 @@
         <v-list>
           <v-list-tile value='true' v-for='(item, i) in items' :key='i' >
               <v-list-tile-action>
-                <router-link :to='item.target'><v-icon v-html='item.icon'></v-icon></router-link>
+                <router-link class='RogueLink' :to='item.target'><v-icon v-html='item.icon'></v-icon></router-link>
               </v-list-tile-action>
-            <router-link :to='item.target'><v-list-tile-title v-text='item.title' class='title'></v-list-tile-title></router-link>
+            <router-link class='RogueLink' :to='item.target'><v-list-tile-title v-text='item.title' class='title'></v-list-tile-title></router-link>
           </v-list-tile>
         </v-list>
       </v-navigation-drawer>
@@ -19,11 +19,12 @@
       <v-container>
         <nuxt />
       </v-container>
-      <v-footer dark color='primary' class='white--text' :fixed='fixed' app height='auto'>
-        <v-layout class='column align-center'>
-          <span class='RogueFooter'>Rogue Designs</span>
-          <span class='RogueFooter'>Email <a href='mailto://admin@roguedesigns.us' class='white--text'>admin@roguedesigns.us</a></span>
-          <span class='RogueFooter'>&copy; Copyright 2017 Rogue Designs Version {{ version }}</span>
+      <v-footer dark color='primary' class='white--text--text' height='auto' aria-label='Footer'>
+        <v-layout column>
+          <div class='RogueFooter'>Rogue Designs</div>
+          <div class='RogueFooter'>Email <a href='mailto://admin@roguedesigns.us' class='white--text'>admin@roguedesigns.us</a></div>
+          <div class='RogueFooter'>&copy; Copyright 2017 Rogue Designs</div>
+          <div class='RogueFooter'>Version {{ version }}</div>            
         </v-layout>
       </v-footer>
     </v-app>
@@ -41,7 +42,7 @@ export default {
       right: false,
       rightDrawer: false,
       title: 'Rogue Designs',
-      version: '2',
+      version: '19',
       items: [
         { icon: 'home', title: 'Home', target: '/' },
         { icon: 'phone', title: 'Contact', target: '/contact' },
@@ -57,4 +58,3 @@ export default {
 <style lang='stylus'>
 @import '../assets/stylus/main.styl'
 </style>
-
