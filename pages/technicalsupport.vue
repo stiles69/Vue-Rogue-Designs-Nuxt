@@ -15,7 +15,7 @@
     <v-layout column class='RogueLayout'>
       <v-flex xs12 sm12 md8 lg6 xl6>
         <v-toolbar color='primary'>
-          <v-toolbar-title class='white--text RogueToolbarTitle'>Technical Support</v-toolbar-title>
+          <v-toolbar-title class='black--text RogueToolbarTitle'>Technical Support</v-toolbar-title>
         </v-toolbar>
         <v-card>
           <v-card-title class='title'>Networking</v-card-title>

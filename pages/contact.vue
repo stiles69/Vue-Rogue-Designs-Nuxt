@@ -16,7 +16,7 @@
     <v-flex xs12 sm12 md8 lg6 xl6>
       <v-card>
         <v-toolbar color='primary'>
-          <v-toolbar-title class='white--text title'>Contact</v-toolbar-title>
+          <v-toolbar-title class='black--text title'>Contact</v-toolbar-title>
           <v-spacer></v-spacer>
         </v-toolbar>
         <v-card-title class='RogueCardText title'>Feel free to contact me at my email address below.</v-card-title>

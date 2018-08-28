@@ -30,8 +30,8 @@ module.exports = {
 
   // Manifest
   manifest: {
-    name: "Hometown Cab App",
-    shortname: "HometownCab",
+    name: "Rogue Designs App",
+    shortname: "RogueDesigns",
     display: "standalone",
     start_url: ".",
     background_color: "#fff",

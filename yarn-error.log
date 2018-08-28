@@ -1,8 +1,8 @@
 Arguments: 
-  /home/brettsalemink/.nvm/versions/node/v10.9.0/bin/node /home/brettsalemink/.yarn/bin/yarn.js add -D @nuxtjs/sitemap
+  /home/brettsalemink/.nvm/versions/node/v10.9.0/bin/node /home/brettsalemink/.yarn/bin/yarn.js version
 
 PATH: 
-  /home/brettsalemink/google-cloud-sdk/bin:/home/brettsalemink/.yarn/bin:/home/brettsalemink/.config/yarn/global/node_modules/.bin:/home/brettsalemink/.nvm/versions/node/v10.9.0/bin:/home/brettsalemink/.gem/ruby/2.5.0/bin:/home/brettsalemink/lib/sh:/home/brettsalemink/bin/install:/home/brettsalemink/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/go/bin:/home/brettsalemink/go/bin
+  /home/brettsalemink/google-cloud-sdk/bin:/home/brettsalemink/.yarn/bin:/home/brettsalemink/.config/yarn/global/node_modules/.bin:/home/brettsalemink/.nvm/versions/node/v10.9.0/bin:/home/brettsalemink/.gem/ruby/2.5.0/bin:/home/brettsalemink/lib/sh:/home/brettsalemink/bin/install:/home/brettsalemink/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/usr/local/go/bin:/home/brettsalemink/go/bin
 
 Yarn version: 
   1.9.4
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  SyntaxError: /home/brettsalemink/development/stiles69/nuxt-app-test/package.json: Unexpected token : in JSON at position 9
+  SyntaxError: /home/brettsalemink/development/stiles69/nuxt-app-test/package.json: Unexpected token , in JSON at position 274
       at JSON.parse (<anonymous>)
       at /home/brettsalemink/.yarn/lib/cli.js:1130:59
       at Generator.next (<anonymous>)
@@ -22,22 +22,27 @@ Trace:
       at /home/brettsalemink/.yarn/lib/cli.js:103:13
 
 npm manifest: 
-  "name": "nuxt-app-test",
-    "version": "1.0.0",
-    "description": "My amazing Nuxt.js project",
+  {
+    "name": "rogue-designs-nuxt",
+    "version": "22.0.0",
+    "description": "Rogue Designs Website in Nuxt.",
     "author": "stiles69",
     "private": true,
     "scripts": {
       "dev": "nuxt",
       "build": "nuxt build",
       "start": "nuxt start",
-      "generate": "nuxt generate"
-    },
+      "generate": "nuxt generate",
+    ,
     "dependencies": {
-      "nuxt": "^1.0.0"
+      "fs-extra": "^7.0.0",
+      "nuxt": "^1.0.0",
+      "vue": "^2.5.17"
     },
     "devDependencies": {
+      "@nuxtjs/google-tag-manager": "^2.0.0",
       "@nuxtjs/pwa": "^2.3.2",
+      "@nuxtjs/sitemap": "^0.1.1",
       "@nuxtjs/vuetify": "^0.4.2",
       "cross-env": "^5.0.1",
       "stylus": "^0.54.5",
@@ -285,6 +290,10 @@ Lockfile:
     dependencies:
       core-js "^2.5.7"
   
+  "@nuxtjs/google-tag-manager@^2.0.0":
+    version "2.0.0"
+    resolved "https://registry.yarnpkg.com/@nuxtjs/google-tag-manager/-/google-tag-manager-2.0.0.tgz#94052aecab59427ddf854689d635ea5782b0ba0b"
+  
   "@nuxtjs/icon@^2.3.2":
     version "2.3.2"
     resolved "https://registry.yarnpkg.com/@nuxtjs/icon/-/icon-2.3.2.tgz#394f745dc9bd9e3d3bbaeaa2746af0db2517dfbb"
@@ -311,6 +320,17 @@ Lockfile:
       "@nuxtjs/manifest" "^2.3.2"
       "@nuxtjs/meta" "^2.3.2"
       "@nuxtjs/workbox" "^2.3.2"
+  
+  "@nuxtjs/sitemap@^0.1.1":
+    version "0.1.1"
+    resolved "https://registry.yarnpkg.com/@nuxtjs/sitemap/-/sitemap-0.1.1.tgz#25031515289e506aa8d3decc33e31569bb023a95"
+    dependencies:
+      async-cache "^1.1.0"
+      fs-extra "^5.0.0"
+      is-https "^1.0.0"
+      lodash "^4.17.5"
+      minimatch "^3.0.4"
+      sitemap "^1.13.0"
   
   "@nuxtjs/vuetify@^0.4.2":
     version "0.4.2"
@@ -502,6 +522,12 @@ Lockfile:
   assign-symbols@^1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/assign-symbols/-/assign-symbols-1.0.0.tgz#59667f41fadd4f20ccbc2bb96b8d4f7f78ec0367"
+  
+  async-cache@^1.1.0:
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/async-cache/-/async-cache-1.1.0.tgz#4a9a5a89d065ec5d8e5254bd9ee96ba76c532b5a"
+    dependencies:
+      lru-cache "^4.0.0"
   
   async-each@^1.0.0:
     version "1.0.1"
@@ -3053,6 +3079,10 @@ Lockfile:
     dependencies:
       is-extglob "^2.1.1"
   
+  is-https@^1.0.0:
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/is-https/-/is-https-1.0.0.tgz#9c1dde000dc7e7288edb983bef379e498e7cb1bf"
+  
   is-number@^3.0.0:
     version "3.0.0"
     resolved "https://registry.yarnpkg.com/is-number/-/is-number-3.0.0.tgz#24fd6201a4782cf50561c810276afc7d12d71195"
@@ -3380,7 +3410,7 @@ Lockfile:
     version "1.1.4"
     resolved "https://registry.yarnpkg.com/lower-case/-/lower-case-1.1.4.tgz#9a2cabd1b9e8e0ae993a4bf7d5875c39c42e8eac"
   
-  lru-cache@^4.0.1, lru-cache@^4.1.1:
+  lru-cache@^4.0.0, lru-cache@^4.0.1, lru-cache@^4.1.1:
     version "4.1.3"
     resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-4.1.3.tgz#a1175cf3496dfc8436c156c334b4955992bce69c"
     dependencies:
@@ -5223,6 +5253,13 @@ Lockfile:
     dependencies:
       is-arrayish "^0.3.1"
   
+  sitemap@^1.13.0:
+    version "1.13.0"
+    resolved "https://registry.yarnpkg.com/sitemap/-/sitemap-1.13.0.tgz#569cbe2180202926a62a266cd3de09c9ceb43f83"
+    dependencies:
+      underscore "^1.7.0"
+      url-join "^1.1.0"
+  
   slash@^1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
@@ -5681,6 +5718,10 @@ Lockfile:
       webpack-sources "^1.1.0"
       worker-farm "^1.5.2"
   
+  underscore@^1.7.0:
+    version "1.9.1"
+    resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.9.1.tgz#06dce34a0e68a7babc29b365b8e74b8925203961"
+  
   union-value@^1.0.0:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/union-value/-/union-value-1.0.0.tgz#5c71c34cb5bad5dcebe3ea0cd08207ba5aa1aea4"
@@ -5749,6 +5790,10 @@ Lockfile:
   urix@^0.1.0:
     version "0.1.0"
     resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
+  
+  url-join@^1.1.0:
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/url-join/-/url-join-1.1.0.tgz#741c6c2f4596c4830d6718460920d0c92202dc78"
   
   url-join@^2.0.2:
     version "2.0.5"
@@ -5906,7 +5951,7 @@ Lockfile:
     version "2.5.17"
     resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.17.tgz#0f8789ad718be68ca1872629832ed533589c6ada"
   
-  vuetify@^1.0.17, vuetify@^1.0.19:
+  vuetify@^1.0.17:
     version "1.1.14"
     resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-1.1.14.tgz#a45b6cd659e31edc8ca8dd2094562f1763f1f223"
   
