@@ -31,7 +31,7 @@ module.exports = {
   // Manifest
   manifest: {
     name: "Rogue Designs App",
-    shortname: "RogueDesigns",
+    shortname: "RogueDesign",
     display: "standalone",
     start_url: ".",
     background_color: "#fff",
