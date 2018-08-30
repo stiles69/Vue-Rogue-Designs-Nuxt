@@ -20,3 +20,5 @@ $ yarn run generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+![Image of Stiles](https://storage.googleapis.com/stiles-images/StilesLogo.png)
+# nuxt-app-test
