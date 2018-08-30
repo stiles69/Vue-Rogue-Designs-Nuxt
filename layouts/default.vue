@@ -19,7 +19,7 @@
       <v-container>
         <nuxt />
       </v-container>
-      <v-footer dark color='primary' class='black--text' height='130' aria-label='Footer'>
+      <v-footer dark color='primary' class='black--text' height='auto' aria-label='Footer'>
         <v-layout column>
           <div class='RogueFooter'>Rogue Designs</div>
           <div class='RogueFooter'>Email <a href='mailto://admin@roguedesigns.us' class='black--text'>admin@roguedesigns.us</a></div>
