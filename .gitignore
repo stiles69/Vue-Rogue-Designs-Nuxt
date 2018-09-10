@@ -15,3 +15,6 @@ dist
 
 # SW
 SW.*
+
+# Webmonitor
+.monitor

@@ -10,6 +10,7 @@ module.exports = {
     "@nuxtjs/pwa",
     "@nuxtjs/sitemap",
     "@nuxtjs/vuetify",
+    "@nuxtjs/webpackmonitor",
      ['@nuxtjs/google-tag-manager', {id: 'GTM-N4H694G'}]
   ],
 
@@ -121,7 +122,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'Rogue Designs Website',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
