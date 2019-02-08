@@ -1,41 +1,43 @@
-importScripts('/_nuxt/workbox.42554690.js')
+importScripts('/_nuxt/workbox.4c4f5ca6.js')
+
+
 
 workbox.precaching.precacheAndRoute([
   {
-    "url": "/_nuxt/app.820176aad99d189df176.js",
-    "revision": "efa4078c7482dc9145998b81548bf802"
+    "url": "/_nuxt/app.4b0d22bdd46ef2fffb20.js",
+    "revision": "6c2512208d00ff43ee993f71626f8163"
   },
   {
-    "url": "/_nuxt/layouts/default.edf0f082ed42630784a6.js",
-    "revision": "47af7e5e750cfe975391a3f36f7edf6e"
+    "url": "/_nuxt/layouts/default.9a1025ed4b87f82634fc.js",
+    "revision": "5a0c6b3a3020c46240c7dc8ab053b395"
   },
   {
-    "url": "/_nuxt/manifest.0a28c31ceadd9ff19287.js",
-    "revision": "b20a7d5851b27ab5c78dbae17ae2eb0e"
+    "url": "/_nuxt/manifest.0f30e29045427587b8a5.js",
+    "revision": "084136f0e391d45ceabf12d9fb9ced47"
   },
   {
-    "url": "/_nuxt/pages/contact.e741d5b729b337ff63d5.js",
-    "revision": "e01a98a5ff0ce9068bdee6edc6f42624"
+    "url": "/_nuxt/pages/contact.3517eff26067e94e4f2b.js",
+    "revision": "212a55d7c1defa38fc5b172b011e4890"
   },
   {
-    "url": "/_nuxt/pages/index.018ee52cebf9bce86526.js",
-    "revision": "04e5a5a698b1f7a983545dc307b7a662"
+    "url": "/_nuxt/pages/index.ba63c6c766109b7e64ab.js",
+    "revision": "c8d79dc1f6175184dc0f07a49b545b57"
   },
   {
-    "url": "/_nuxt/pages/raspberrypi.c6daa226cf19510abdca.js",
-    "revision": "cdd1596ae04e65d4e62087b11bc2c5f8"
+    "url": "/_nuxt/pages/raspberrypi.383ae1a968ebb4878bce.js",
+    "revision": "aaea5227f8fc7f8227f40b03bb99dbc1"
   },
   {
-    "url": "/_nuxt/pages/technicalsupport.e4112d2814673e44bf0c.js",
-    "revision": "777a2c425a75dc46fdc7382613af4c76"
+    "url": "/_nuxt/pages/technicalsupport.240af6f3e562fddbaecd.js",
+    "revision": "8cb7c81583c51595e8f358f02a8aa6d4"
   },
   {
-    "url": "/_nuxt/pages/website.343a9c62c7736c652fd0.js",
-    "revision": "46846ddb1b99a633fbd67bfe5513db65"
+    "url": "/_nuxt/pages/website.977227eadbc7d885ee0b.js",
+    "revision": "b218f5b26717c6cd97c4a119b76f1b3f"
   },
   {
-    "url": "/_nuxt/vendor.b8c4719190ee19fef0b3.js",
-    "revision": "78d41ea47cd205c96afd0bbce22f7cf9"
+    "url": "/_nuxt/vendor.d6ec0b25f542aaefbd26.js",
+    "revision": "0ec9c10b42273b73c1eb9fa0f1cafe1b"
   }
 ], {
   "cacheId": "rogue-designs-nuxt",
@@ -53,7 +55,7 @@ workbox.routing.registerRoute(new RegExp('/_nuxt/.*'), workbox.strategies.cacheF
 
 workbox.routing.registerRoute(new RegExp('/.*'), workbox.strategies.networkFirst({}), 'GET')
 
-workbox.routing.registerRoute(new RegExp('https://roguedesigns/.*'), workbox.strategies.networkFirst({"cacheName":"rogue-designs-cache","cacheExpiration":{"maxEntries":10,"maxAgeSeconds":3600}}), 'GET')
+workbox.routing.registerRoute(new RegExp('https://www.roguedesigns/.*'), workbox.strategies.networkFirst({"cacheName":"rogue-designs-cache","cacheExpiration":{"maxEntries":10,"maxAgeSeconds":3600}}), 'GET')
 
 
 

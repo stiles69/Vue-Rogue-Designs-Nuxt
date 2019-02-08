@@ -1,2 +1,2 @@
-const version = "194.0.0"
+const version = "195.0.0"
 export default { version }
